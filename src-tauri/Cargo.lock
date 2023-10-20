@@ -1465,8 +1465,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "harp-desktop"
-version = "1.0.5"
+name = "harp-staging-desktop"
+version = "1.0.6"
 dependencies = [
  "sentry-tauri",
  "serde",

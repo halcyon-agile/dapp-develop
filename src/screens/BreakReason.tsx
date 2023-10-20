@@ -42,12 +42,12 @@ function BreakReason() {
           <p className="font-normal text-base text-slate-700">Reason 3</p>
         </div> */}
         <div className="w-full py-4">
-          <Label
+          {/* <Label
             htmlFor="reason"
             className="font-medium text-sm text-slate-900"
           >
             Other Reason
-          </Label>
+          </Label> */}
           <Input
             type="reason"
             id="reason"

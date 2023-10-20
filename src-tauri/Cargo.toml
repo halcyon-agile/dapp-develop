@@ -1,7 +1,7 @@
 [package]
-name = "harp-desktop"
-version = "1.0.5"
-description = "HARP App"
+name = "harp-staging-desktop"
+version = "1.0.6"
+description = "HARP Staging App"
 authors = ["you"]
 license = ""
 repository = ""
