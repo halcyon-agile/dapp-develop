@@ -50,7 +50,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.halcyonagilepms.dev",
+      "identifier": "com.halcyonagilepms.staging",
       "targets": "all"
     },
     "security": {
