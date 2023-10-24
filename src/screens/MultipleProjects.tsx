@@ -33,7 +33,7 @@ import {
   TooltipTrigger,
 } from "../components/ui";
 import leaveConsultation from "../api/consultations/leave-consultation";
-import portalUrl from "../lib/portalUrl";
+import portalUrl from "../../portalUrl";
 import { TaskTime } from "@/types";
 import stopTaskApi from "../api/stopTask";
 import useAttendance from "../data/use-attendance";
