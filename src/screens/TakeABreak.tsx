@@ -41,7 +41,6 @@ function TakeABreak() {
                   })
                 }
               }}
-              maxLength={2}
               value={breakForm.hours !== null ? breakForm.hours : ""}
             />
           </div>
@@ -62,7 +61,6 @@ function TakeABreak() {
                   })
                 }
               }}
-              maxLength={2}
               value={breakForm.minutes !== null ? breakForm.minutes : ""}
             />
           </div>

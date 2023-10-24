@@ -1,5 +1,5 @@
 import axios from "axios";
-import portalUrl from "../../portalUrl";
+import portalUrl from "../lib/portalUrl";
 
 const request = axios.create({
   baseURL: portalUrl,
