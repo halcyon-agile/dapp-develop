@@ -94,10 +94,10 @@ function BreakTimer() {
             </p>
           </div>
         )}
-        <p className="font-semibold text-2xl text-gray-900 text-center">
+        {/* <p className="font-semibold text-2xl text-gray-900 text-center">
           {Math.floor(timer / 60)}:{timer % 60 < 10 ? "0" : ""}
           {timer % 60}
-        </p>
+        </p> */}
         <Button className="bg-cyan-500 px-4" onClick={endBreak}>
           End Break
         </Button>

@@ -42,6 +42,7 @@ function TakeABreak() {
                 }
               }}
               value={breakForm.hours !== null ? breakForm.hours : ""}
+              maxLength={1}
             />
           </div>
           <div className="flex-col flex-1 gap-1.5">
@@ -62,6 +63,7 @@ function TakeABreak() {
                 }
               }}
               value={breakForm.minutes !== null ? breakForm.minutes : ""}
+              maxLength={2}
             />
           </div>
         </div>

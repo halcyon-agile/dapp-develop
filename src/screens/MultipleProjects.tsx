@@ -192,14 +192,14 @@ function MultipleProjects() {
 
   return (
     <div className="overflow-hidden">
-      <button
+      {/* <button
         onClick={toggleMinimize}
         className="text-blue-600 font-bold fixed right-4 text-xl"
         style={{ zIndex: 9999 }}
       >
         {minimal ? "+" : "-"}
-      </button>
-      {minimal && (
+      </button> */}
+      {/* {minimal && (
         <div className="w-full ml-2 mt-4">
           {activeTasks &&
             activeTasks.map((data: any) => (
@@ -214,7 +214,7 @@ function MultipleProjects() {
               </div>
             ))}
         </div>
-      )}
+      )} */}
       {!minimal && (
         <main className="flex min-h-screen flex-col items-center text-black p-5">
           <div className="flex-1 w-full">
