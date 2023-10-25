@@ -26,7 +26,12 @@ function LogConsultation() {
 
   const submit = () => {
     setLoading(true)
-    suddenConsultation(task?.id, moment().utc().set({'hour': Number(form.start.split(':')[0]), 'minute': Number(form.start.split(':')[1])}).format(), moment().utc().set({'hour': Number(form.end.split(':')[0]), 'minute': Number(form.end.split(':')[1])}).format())
+    // console.log('data', {
+    //   task_id: task?.id,
+    //   start: moment().set({'hour': Number(form.start.split(':')[0]), 'minute': Number(form.start.split(':')[1])}).utc().format(),
+    //   end: moment().set({'hour': Number(form.end.split(':')[0]), 'minute': Number(form.end.split(':')[1])}).utc().format(),
+    // })
+    suddenConsultation(task?.id, moment().set({'hour': Number(form.start.split(':')[0]), 'minute': Number(form.start.split(':')[1])}).format(), moment().set({'hour': Number(form.end.split(':')[0]), 'minute': Number(form.end.split(':')[1])}).format())
       .then(() => {
         setLoading(false)
         navigate('/')
