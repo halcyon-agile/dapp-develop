@@ -29,6 +29,7 @@ function BreakTimer() {
 
     const updateTimer = async () => {
       const breaks = await getBreak();
+      console.log('breaks', breaks)
       if (breaks?.started_at) {
         const startedAt = DateTime.fromISO(breaks?.started_at);
         setStartDateTime(startedAt);
@@ -81,6 +82,9 @@ function BreakTimer() {
       });
   };
 
+  // console.log('timer', timer)
+  // console.log('alertInSeconds', alertInSeconds)
+
   return (
     <main className="flex min-h-screen flex-col text-black py-16">
       <div className="w-full flex flex-col items-center gap-4">
@@ -94,10 +98,10 @@ function BreakTimer() {
             </p>
           </div>
         )}
-        {/* <p className="font-semibold text-2xl text-gray-900 text-center">
+        <p className="font-semibold text-2xl text-gray-900 text-center">
           {Math.floor(timer / 60)}:{timer % 60 < 10 ? "0" : ""}
           {timer % 60}
-        </p> */}
+        </p>
         <Button className="bg-cyan-500 px-4" onClick={endBreak}>
           End Break
         </Button>

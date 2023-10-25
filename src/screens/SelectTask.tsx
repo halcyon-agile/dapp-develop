@@ -168,15 +168,7 @@ function SelectTask() {
               colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
             />
           )}
-          {tasks.length > 0 ? (
-            tasks
-              .filter(
-                (x: any) =>
-                  x.name.toLowerCase().includes(search.toLocaleLowerCase()) ||
-                  x.project.name
-                    .toLowerCase()
-                    .includes(search.toLocaleLowerCase())
-              )
+          {tasks.length > 0 ? (tasks.filter((x: any) => (x.name.toLowerCase()).includes(search.toLowerCase()) || (x.project.name.toLowerCase()).includes(search.toLowerCase()))
               .map((data: any, index: number) => (
                 <button
                   className={`flex w-full py-2 border-b ${

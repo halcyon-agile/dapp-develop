@@ -38,8 +38,8 @@ const useStore = create(
       setScrums: (scrums: any) => set(() => ({ scrums })),
       breakForm: {
         reason: "",
-        hours: 0,
-        minutes: 15,
+        hours: "0",
+        minutes: "15",
       },
       setBreakForm: (breakForm: BreakForm) =>
         set(() => ({ breakForm: breakForm })),

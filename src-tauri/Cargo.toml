@@ -1,6 +1,6 @@
 [package]
 name = "harp-staging-desktop"
-version = "1.0.8"
+version = "1.0.9"
 description = "HARP Staging App"
 authors = ["you"]
 license = ""

@@ -101,8 +101,8 @@ export interface RequestConsultation {
 
 export interface BreakForm {
   reason: string;
-  hours: number;
-  minutes: number;
+  hours: string;
+  minutes: string;
 }
 
 export interface TaskType {

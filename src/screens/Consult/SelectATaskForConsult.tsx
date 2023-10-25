@@ -145,7 +145,7 @@ function SelectTaskForConsult() {
             />
           )}
           {tasks.length > 0 ? (
-            tasks.filter((x: any) => x.name.includes(search) || x.project.name.includes(search)).map((data: any, index: number) => (
+            tasks.filter((x: any) => x.name.toLowerCase().includes(search.toLowerCase()) || x.project.name.toLowerCase().includes(search.toLowerCase())).map((data: any, index: number) => (
               <button
                 className={`flex w-full py-2 border-b ${
                   selectedProject === data.id && "bg-slate-300"
