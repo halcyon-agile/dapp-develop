@@ -37,7 +37,7 @@ function TakeABreak() {
                 if (e.target.value === '' || re.test(e.target.value)) {
                   setBreakForm({
                     ...breakForm,
-                    hours: e.target.value,
+                    hours: `${e.target.value}`,
                   })
                 }
               }}
@@ -58,7 +58,7 @@ function TakeABreak() {
                 if (e.target.value === '' || re.test(e.target.value)) {
                   setBreakForm({
                     ...breakForm,
-                    minutes: e.target.value,
+                    minutes: `${e.target.value}`,
                   })
                 }
               }}
