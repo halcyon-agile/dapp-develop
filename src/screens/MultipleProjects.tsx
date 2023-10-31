@@ -66,6 +66,13 @@ function MultipleProjects() {
     status: attendanceStatus,
   } = useAttendance();
   const { data: breaks, status: breaksStatus } = useBreaks();
+  console.log('breaks', breaks)
+
+  useEffect(() => {
+    if (breaks?.breaks && breaks?.breaks?.length > 0) {
+      navigate("/break-timer")
+    }
+  }, [])
 
   const [currentTime, setCurrentTime] = useState<Date>(new Date());
   const [loggedOff, loggingOff] = useState<boolean>(false);
