@@ -367,7 +367,7 @@ function MultipleProjects() {
                         started_at={data?.started_at}
                         onUpdateSuccess={fetchRequiredDatas}
                         isConsultation={data?.consultation_id !== null}
-                        ganttEnabled={data?.task?.project?.project_type?.gantt_project_duration === 1}
+                        ganttEnabled={data?.task?.project?.project_type?.gantt_project_duration}
                       />
                     </div>
                   </div>
